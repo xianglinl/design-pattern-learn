@@ -1,0 +1,20 @@
+{
+  "name": "xianglin/design_pattern",
+  "description": "This is a test warehouse",
+  "authors": [
+    {
+      "name": "xianglin",
+      "email": "793101759@qq.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "DesignPatterns\\Bridge\\": "Bridge/src",
+      "DesignPatterns\\Composite\\": "Composite/src",
+      "DesignPatterns\\Registry\\": "Registry/src"
+    }
+  },
+  "require": {
+    "ext-redis": "*"
+  }
+}
