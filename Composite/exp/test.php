@@ -14,18 +14,26 @@ require_once(__DIR__ . '/../../vendor/autoload.php');
 
 function testRender()
 {
-    $form = new Form();
-    $form->addElement(new TextElement());
-    $form->addElement(new InputElement());
+    $form = new Form();//3
+    $form->addElement(new TextElement());//4
+    $form->addElement(new InputElement());//5
     $embed = new Form();
-    $embed->addElement(new TextElement());
-    $embed->addElement(new InputElement());
+    $embed->addElement(new TextElement()); // 1
+    $embed->addElement(new InputElement());// 2
     $embed->addElement($form);
     return $embed->render();
 //    $form->addElement($embed);  // 这里我们添加一个嵌套树到表单
 //    return $form->render();
-
 }
 
+/**
+ * 打印结果
+ * text
+ * input
+ *  text
+ *  input
+ */
+
+
 $form = testRender();
-var_dump($form);
+print_r($form);
