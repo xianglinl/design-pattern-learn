@@ -37,7 +37,7 @@
 **目的：将抽象与实现分离，这样两者可以独立地改变，且互不影响。**
 
 - 举例：
-  - 数据查询（ElasticSreach，Mysql，MongoDB）
+  - 数据查询（ElasticSearch，Mysql，MongoDB）
 
 #### 组合模式（Composite）
 
