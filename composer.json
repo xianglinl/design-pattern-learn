@@ -11,7 +11,8 @@
     "psr-4": {
       "DesignPatterns\\Bridge\\": "Bridge/src",
       "DesignPatterns\\Composite\\": "Composite/src",
-      "DesignPatterns\\Registry\\": "Registry/src"
+      "DesignPatterns\\Registry\\": "Registry/src",
+      "app\\": "app"
     }
   },
   "require": {
