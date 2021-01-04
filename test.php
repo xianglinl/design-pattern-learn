@@ -6,8 +6,13 @@
  * Time：00:00
  */
 
-use app\Test;
 require_once './vendor/autoload.php';
 
-$model = new Test();
-$model->index();
+use app\GetData;
+use app\Test;
+
+//$model = new Test();
+//$model->index();
+
+$res = GetData::create()->index();
+var_dump($res);
